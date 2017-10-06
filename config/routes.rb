@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get 'pages/rooms'
-
-  get 'pages/contact'
+  # get '/rooms'
+  get '/rooms', {to: 'pages#rooms', as: 'rooms'}
+  get '/contact', {to: 'pages#contact', as: 'contact'}
+  # get '/contact'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
