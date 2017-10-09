@@ -7,6 +7,8 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @enquiry = Enquiry.all
+    @enquiry = Enquiry.new
   end
 
   def about
