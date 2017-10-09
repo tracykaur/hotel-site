@@ -1,10 +1,14 @@
+<main>
 <h1>Voulez-vous coucher avec nous ce soir?</h1>
 <p>Room prices</p><br>
-<main>
-  <p> Superior room $400 <p/>
-    <%= image_tag "hotel_t.jpg", class: "hotel", alt: "Hotel room image" %>
-</main>
-<main>
-  <h3> Standard room $200 <h3/>
-    <%= image_tag "room101.jpg", class: "hotel", alt: "Hotel room image" %>
+<% @rooms.each do |room| %><br>
+<p> <%=room.title %><p/>
+<p> <%=room.description %><p/>
+<p> <%=room.price_per_night %><p/>
+
+<%= image_tag room.image%>
+    <% end %>
+
+
+
 </main>
