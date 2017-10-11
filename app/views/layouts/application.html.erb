@@ -6,12 +6,13 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
 
   <header>
-
+<%= flash.notice %>
     <!-- Logo -->
     <h1 class="logo"></h1>
     <!-- /Logo -->
